@@ -44,7 +44,7 @@ app.get('/hardquestions', (req,res) => {
         correct_answer : 'afounass',
         incorrect_answers: ['tili','tizmrte','aghoun']
     },{
-        id:21,
+        id:22,
         difficulty:'hard',
         question: 'madass 9arn stmazight (hard)?',
         correct_answer : 'afounass',
