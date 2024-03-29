@@ -1,5 +1,12 @@
 const app = require('express')()
+const express = require('express');
+const cors = require('cors');
+app.use(cors());
+
+
 const port=8080
+
+//API link : https://apifg.vercel.app/easyquestions
 
 app.listen(port, ()=> console.log(`it's alive on http://localhost:${8080}`))
 
