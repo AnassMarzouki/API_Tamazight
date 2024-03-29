@@ -16,13 +16,15 @@ app.get('/easyquestions', (req, res)=> {
         difficulty:'easy',
         question: 'madass 9arn stmazight (easy)?',
         correct_answer : 'aghnja',
-        incorrect_answers: ['aydi', 'moch', 'l3afyte']
+        incorrect_answers: ['aydi', 'moch', 'l3afyte'],
+        isClicked:false
     }, {
         id:2,
         difficulty:'easy',
         question: 'madass 9arn stmazight (easy)2?',
         correct_answer : 'aghnja2',
-        incorrect_answers: ['aydi2', 'moch2', 'l3afyte2']
+        incorrect_answers: ['aydi2', 'moch2', 'l3afyte2'],
+        isClicked:false
     },{
 
     }])
@@ -34,12 +36,14 @@ app.get('/mediumquestions', (req,res) => {
         difficulty:'medium',
         question: 'madass 9arn stmazight (medium)?',
         correct_answer : 'yadou',
-        incorrect_answers: ['tasghount','afdjaj','idilinnate']
+        incorrect_answers: ['tasghount','afdjaj','idilinnate'],
+        isClicked:false
     }, {id:12,
         difficulty:'medium',
         question: 'madass 9arn stmazight (medium) 2 ?',
         correct_answer : 'yadou2',
-        incorrect_answers: ['tasghount2','afdjaj2','idilinnate2']}
+        incorrect_answers: ['tasghount2','afdjaj2','idilinnate2'],
+        isClicked:false}
 ])
 })
 
@@ -49,12 +53,14 @@ app.get('/hardquestions', (req,res) => {
         difficulty:'hard',
         question: 'madass 9arn stmazight (hard)?',
         correct_answer : 'afounass',
-        incorrect_answers: ['tili','tizmrte','aghoun']
+        incorrect_answers: ['tili','tizmrte','aghoun'],
+        isClicked:false
     },{
         id:22,
         difficulty:'hard',
-        question: 'madass 9arn stmazight (hard)?',
-        correct_answer : 'afounass',
-        incorrect_answers: ['tili','tizmrte','aghoun']
+        question: 'madass 9arn stmazight (hard) 3?',
+        correct_answer : 'tyazite',
+        incorrect_answers: ['fouss','dar','aghyoul'],
+        isClicked:false
     }])
 })
