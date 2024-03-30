@@ -10,57 +10,52 @@ const port=8080
 
 app.listen(port, ()=> console.log(`it's alive on http://localhost:${8080}`))
 
-app.get('/easyquestions', (req, res)=> {
+app.get('/questions', (req, res)=> {
     res.status(200).send([{
+
         id:1,
         difficulty:'easy',
-        question: 'madass 9arn stmazight (easy)?',
-        correct_answer : 'aghnja',
-        incorrect_answers: ['aydi', 'moch', 'l3afyte'],
-        isClicked:false
+        questionText: 'A finger nail is called .. ?',
+        questionImage : 'https://i.ibb.co/Ltgjyb7/1.jpg',
+        answerOptions : [
+            {answerText: 'Abzim', isCorrect:false},
+            {answerText: 'Iless', isCorrect:false},
+            {answerText: 'Icher', isCorrect:true},
+            {answerText: 'Ifden', isCorrect:false}
+            ]
+        
     }, {
         id:2,
         difficulty:'easy',
-        question: 'madass 9arn stmazight (easy)2?',
-        correct_answer : 'aghnja2',
-        incorrect_answers: ['aydi2', 'moch2', 'l3afyte2'],
-        isClicked:false
+        questionText: 'An antique road is called .. ?',
+        questionImage : 'https://i.ibb.co/FxxPTdq/2.jpg',
+        answerOptions : [
+            {answerText: 'Asqif', isCorrect:true},
+            {answerText: 'Aghir', isCorrect:false},
+            {answerText: 'Achdad', isCorrect:false},
+            {answerText: 'Aghrem', isCorrect:false}
+            ]
     },{
-
-    }])
-})
-
-app.get('/mediumquestions', (req,res) => {
-    res.status(200).send([{
-        id:11,
-        difficulty:'medium',
-        question: 'madass 9arn stmazight (medium)?',
-        correct_answer : 'yadou',
-        incorrect_answers: ['tasghount','afdjaj','idilinnate'],
-        isClicked:false
-    }, {id:12,
-        difficulty:'medium',
-        question: 'madass 9arn stmazight (medium) 2 ?',
-        correct_answer : 'yadou2',
-        incorrect_answers: ['tasghount2','afdjaj2','idilinnate2'],
-        isClicked:false}
-])
-})
-
-app.get('/hardquestions', (req,res) => {
-    res.status(200).send([{
-        id:21,
-        difficulty:'hard',
-        question: 'madass 9arn stmazight (hard)?',
-        correct_answer : 'afounass',
-        incorrect_answers: ['tili','tizmrte','aghoun'],
-        isClicked:false
+        id:3,
+        difficulty:'easy',
+        questionText: 'The color below is .. ?',
+        questionImage : 'https://i.ibb.co/8PMpDdk/3.jpg',
+        answerOptions : [
+            {answerText: 'Amllal', isCorrect:false},
+            {answerText: 'Awragh', isCorrect:false},
+            {answerText: 'Adal', isCorrect:false},
+            {answerText: 'Achhmey', isCorrect:true}
+            ]
     },{
-        id:22,
-        difficulty:'hard',
-        question: 'madass 9arn stmazight (hard) 3?',
-        correct_answer : 'tyazite',
-        incorrect_answers: ['fouss','dar','aghyoul'],
-        isClicked:false
+        id:4,
+        difficulty:'easy',
+        questionText: 'A date is known as .. ?',
+        questionImage : 'https://i.ibb.co/8PMpDdk/3.jpg',
+        answerOptions : [
+            {answerText: 'Affar', isCorrect:false},
+            {answerText: 'Abrid', isCorrect:false},
+            {answerText: 'Aghi', isCorrect:false},
+            {answerText: 'Ayniw', isCorrect:true}
+            ]
     }])
 })
