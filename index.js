@@ -303,13 +303,13 @@ app.get('/questions', (req, res)=> {
     },{
         id:27,
         difficulty:'hard',
-        questionText: 'A thumb is known as .. ?',
+        questionText: 'This animal is called .. ?',
         questionImage : 'https://i.ibb.co/vwf5f8R/27.jpg',
         answerOptions : [
-            {answerText: 'Imez', isCorrect:true},
-            {answerText: 'Ifden', isCorrect:false},
-            {answerText: 'Icher', isCorrect:false},
-            {answerText: 'Ighed', isCorrect:false}
+            {answerText: 'Amhrey', isCorrect:true},
+            {answerText: 'Alghem', isCorrect:false},
+            {answerText: 'Achmej', isCorrect:false},
+            {answerText: 'Ag3oud', isCorrect:false}
             ]
     },{
         id:28,
